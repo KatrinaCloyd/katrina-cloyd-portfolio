@@ -3,11 +3,11 @@ import Link from 'next/link'
 import styles from '../styles/Nav.module.css'
 
 
-export default function Navigation() {
+export default function Navigation(home) {
     return (
         <nav className={styles.navList}>
             <Link href='/'>
-                <a className={styles.navItem}>HOME</a>
+                <a className={home ? [styles.selected, styles.navItem].join(' ') : styles.navItem}>HOME</a>
             </Link>
             <Link href='/about'>
                 <a className={styles.navItem}>ABOUT</a>

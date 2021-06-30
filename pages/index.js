@@ -19,7 +19,7 @@ export default function Home() {
         <h3>
           Welcome to my portfolio site. I am glad you are here. This is still a work in progress. Slow pregress if I am being honest, becasue I am usting this as my first next.js project. Which is very exciting and fun, but also considerably slower, so thank you for your patience, and check back soon! Who knows maybe this will go more quickly than anticipated!
         </h3>
-        {/* <Navigation /> */}
+        <Navigation />
       </main>
 
       <footer className={styles.footer}>
