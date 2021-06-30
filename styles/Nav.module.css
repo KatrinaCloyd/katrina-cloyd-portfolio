@@ -1,0 +1,14 @@
+.navList{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.navItem{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(138, 30, 65);
+
+}
