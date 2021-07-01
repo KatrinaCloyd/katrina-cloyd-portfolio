@@ -8,3 +8,13 @@
 .icon:hover{
     border-bottom: 3px solid rgb(120, 125, 65);
 }
+
+@media (max-width: 600px) {
+
+    .iconWrapper{
+        text-align: center;
+    }
+    .icon {
+        max-width: 2rem;
+    }
+}

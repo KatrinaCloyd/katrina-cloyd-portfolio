@@ -2,7 +2,7 @@ import styles from '../styles/Contact.module.css'
 
 export default function Contact() {
     return (
-        <>
+        <div className={styles.iconWrapper}>
             <a href="mailto: katrina.cloyd@yahoo.com" target='_blank'>
                 <img
                     className={styles.icon}
@@ -33,6 +33,6 @@ export default function Contact() {
                     src='/ig2.svg'
                     alt='instagram' />
             </a>
-        </>
+        </div>
     )
 };
