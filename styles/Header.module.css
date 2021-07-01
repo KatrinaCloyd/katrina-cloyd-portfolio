@@ -1,0 +1,24 @@
+.headerContainer{
+    width: 100%;
+    padding: 1.5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 80rem;
+    align-content: flex-start;
+    border-bottom: 9px double rgb(165, 30, 80);
+}
+
+.titleImg{
+    max-width: 25rem;
+}
+
+@media (max-width: 600px) {
+    .headerContainer{
+        align-content:center;
+        padding: 1rem;
+    }
+    .titleImg{
+        width: 100%;
+        max-width: 25rem;
+    }
+}
