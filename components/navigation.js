@@ -7,10 +7,10 @@ export default function Navigation({ page, setPage }) {
             <a className={page === 'home' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
                 onClick={() => { setPage('home') }}>
                 HOME</a>
-            <a className={page === 'about' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
+            {/* <a className={page === 'about' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
                 onClick={() => { setPage('about') }}>
                 ABOUT
-            </a>
+            </a> */}
             <a className={page === 'dev' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
                 onClick={() => { setPage('dev') }}>
                 DEV WORK

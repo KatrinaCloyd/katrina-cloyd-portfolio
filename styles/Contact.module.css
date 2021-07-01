@@ -1,0 +1,10 @@
+.icon{
+    max-width: 2.5rem;
+    margin-right: 1.5rem;
+    padding: .2rem;
+    border-bottom: 3px solid white;
+}
+
+.icon:hover{
+    border-bottom: 3px solid rgb(120, 125, 65);
+}
