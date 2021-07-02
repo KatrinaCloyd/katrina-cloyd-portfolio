@@ -21,6 +21,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2rem;
     text-decoration: underline;
+    transition: color 300ms ease-in-out;
 }
 
 .resume:hover{
