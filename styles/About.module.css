@@ -1,0 +1,39 @@
+.about{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.headshot{
+    width: 40%;
+    max-width: 90%;
+    max-height: fit-content;
+    align-self:flex-start;
+    margin-bottom: 1rem;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.blurb{
+    padding-left: 1rem;
+}
+
+.resume{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    transition: color 300ms ease-in-out;
+}
+
+.resume:hover{
+    color: rgb(120, 125, 65);
+}
+
+@media (max-width: 600px) {
+    .about{
+        flex-direction: column;
+    }
+    .headshot {
+      max-width: 70%;
+      align-self: center;
+    }
+  }

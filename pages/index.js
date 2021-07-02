@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navigation from '../components/navigation'
 import Contact from '../components/Contact'
+import About from '../components/About'
 import Header from '../components/Header'
 import { useState } from 'react'
 import styles from '../styles/Home.module.css'
@@ -39,8 +40,9 @@ export default function Home() {
             who knows maybe this will go more quickly than anticipated!
           </p>}
         {page === 'about' &&
-          <p className={styles.grid}>about me
-          </p>}
+          <div className={styles.grid}>
+            <About />
+          </div>}
         {page === 'dev' &&
           <p className={styles.grid}>examples of my software engineering work coming soon
           </p>}

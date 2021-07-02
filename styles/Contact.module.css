@@ -3,6 +3,7 @@
     margin-right: 1.5rem;
     padding: .2rem;
     border-bottom: 3px solid white;
+    transition: border 300ms ease-in-out;
 }
 
 .icon:hover{
