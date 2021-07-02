@@ -10,6 +10,7 @@
     max-height: fit-content;
     align-self:flex-start;
     margin-bottom: 1rem;
+    border-radius: 0px 10px 10px 10px;
 }
 
 .blurb{
