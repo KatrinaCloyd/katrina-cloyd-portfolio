@@ -15,11 +15,11 @@ export default function About() {
                 <hr></hr>
                 <a href='/KatrinaCloyd2021.pdf' className={styles.resume} target='_blank'>RESUME</a>
                 <br /><br />
-                <p>Languages: <br />JavaScript | HTML | CSS </p>
-                <p>Libraries/Frameworks:<br />React | Node.js | Express | jQuery | Rest APIs </p>
+                <p>Languages: <br />JavaScript | HTML5 | CSS3 </p>
+                <p>Libraries/Frameworks:<br />React | Node.js | Socket.io | Express | Rest APIs </p>
                 <p>Databases: <br />SQL | PostgreSQL</p>
                 <p>Testing Suites: <br />Jest | QUnit | Travis CI</p>
-                <p>Tools: <br />GitHub | VScode | Postman | PGAdmin | Heroku | Slack | Miro | Illustrator | InDesign | Photoshop</p>
+                <p>Tools: <br />GitHub | VScode | Miro | Slack | Smartsheet | Trello <br /> Illustrator | InDesign | Photoshop</p>
             </div>
         </div>
     )
