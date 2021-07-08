@@ -48,7 +48,7 @@ button{
 
 button:hover{
   color: rgb(165, 30, 80);
-  background-color:rgb(181, 173, 165);
+  background-color:rgba(181, 173, 165, .3);
   box-shadow: 1px 1px rgb(181, 173, 165);
 }
 
