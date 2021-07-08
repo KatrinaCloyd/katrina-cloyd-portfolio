@@ -1,8 +1,9 @@
-export default work = [
+const work = [
     {
         id: 'devGIM',
         title: 'GIM LCC.',
         oneLiner: 'GIM LLC is an escape room inspired website where players work together to find clues to free the ghost!',
+        note: null,
         tech: 'JavaScript | React | Socket.io | Context Api | Node | Express',
         github: 'https://github.com/GIM-LLC',
         liveSite: 'https://www.escapegim.com/',
@@ -19,7 +20,8 @@ export default work = [
     {
         id: 'devPP',
         title: 'Pixel Pusher',
-        oneLiner: 'Published NPM package for users to create unique pixel and text based art right in the terminal window as well as save, upload and view artwork in the gallery.',
+        oneLiner: 'Published NPM package to create unique art right in the terminal window! Users can also save, upload and view artwork in the gallery.',
+        note: null,
         tech: 'JavaScript | Node | Express | GitHub OAuth | Axios | Inquirer | Blessed',
         github: 'https://github.com/st-ART-up',
         liveSite: null,
@@ -36,7 +38,8 @@ export default work = [
     {
         id: 'devGG',
         title: 'GainfulGarden',
-        oneLiner: 'Gardening website to help new and seasoned gardeners keep track of their gardens, wishlists, plant care history, and plan for more. The live site is not functional due to our source API, Trefle being taken down earlier this year.',
+        oneLiner: 'Gardening site for users to search for new plants, and track their garden info. Live site under construction, as our source API was discontinued.',
+        note: null,
         tech: 'JavaScript | React | Node | Express | Superagent | Toastify',
         github: 'https://github.com/GainfulGarden',
         liveSite: 'https://gainfulgarden.netlify.app/',
@@ -50,4 +53,24 @@ export default work = [
         image3: '/GIM.png',
         image4: '/GIM.png',
     },
+    {
+        id: 'devVM',
+        title: 'Vampire Match',
+        oneLiner: 'Memory card match game based on the movie and television series ',
+        note: 'What We Do In The Shadows.',
+        tech: 'JavaScript | HTML | CSS | QUnit',
+        github: 'https://github.com/UniKittyCorns/MemoryCardGame',
+        liveSite: 'https://vampirematch.netlify.app/',
+        npmLink: null,
+        blurb1: 'big blurb #1',
+        blurb2: 'big blurb #2',
+        blurb3: 'big blurb #3',
+        video: '/GIM.mp4',
+        image1: '/GIM.png',
+        image2: '/GIM.png',
+        image3: '/GIM.png',
+        image4: '/GIM.png',
+    },
 ];
+
+export default work;
