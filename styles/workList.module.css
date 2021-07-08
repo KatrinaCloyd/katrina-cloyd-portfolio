@@ -1,3 +1,9 @@
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .container{
     width: 20rem;
     position: relative;
@@ -5,6 +11,7 @@
     transition: transform .25s ease;
     font-size: .9rem;
     transition: box-shadow 0.5s ease;
+    margin: 0 .8rem .8rem 0 ;
 }
 
 .projectImage{
@@ -62,5 +69,17 @@
     .icon {
         max-width: 2rem;
         margin-right: .5rem;
+    }
+    .list{
+        justify-content: center;
+    }
+    .container{
+        max-width: 20rem;
+        width: 80%;
+        height: min-content;
+        font-size: .8rem;
+    }
+    .projectImage img{
+        width: 95%;
     }
 }
