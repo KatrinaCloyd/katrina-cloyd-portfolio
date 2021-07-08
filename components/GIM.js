@@ -31,12 +31,12 @@ export default function GIM({ setPage }) {
             <p>LARGE BLURB 1 lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah</p>
             <div className={styles.detailImgContainer}>
                 <img src='/GIM.png' alt='screenshot 1 of app' />
-                <img src='/GIM.png' alt='screenshot 2 of app' />
+                <img src='/GIM2.png' alt='screenshot 2 of app' />
             </div>
             <p>DETAIL BLURB 2 lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume</p>
             <div className={styles.detailImgContainer}>
-                <img src='/GIM.png' alt='screenshot 3 of app' />
-                <img src='/GIM.png' alt='screenshot 4 of app' />
+                <img src='/GIM3.png' alt='screenshot 3 of app' />
+                <img src='/GIM4.png' alt='screenshot 4 of app' />
             </div>
             <p>DETAIL BLURB 3 lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume</p>
             <button className={styles.backBtn} onClick={() => setPage('dev')}>BACK TO DEV WORK</button>
