@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
 
 .navList{
-    flex:1;
     min-width: 150px;
     max-width: 180px;
     display: flex;
