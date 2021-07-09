@@ -33,25 +33,3 @@ hr{
   background-color: rgb(140, 130, 122);
   border: none;
 }
-
-button{
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  color: rgb(140, 130, 122);
-  background-color: white;
-  border-radius: 3px;
-  border: 2px solid rgb(165, 30, 80);
-  box-shadow: 3px 3px rgb(181, 173, 165);
-  padding: .1rem 1.5rem;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-
-button:hover{
-  color: rgb(165, 30, 80);
-  background-color:rgba(181, 173, 165, .3);
-  box-shadow: 1px 1px rgb(181, 173, 165);
-}
-
-p:first-child{
-  text-align: left;
-}
