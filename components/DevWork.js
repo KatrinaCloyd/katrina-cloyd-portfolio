@@ -1,13 +1,18 @@
 import styles from '../styles/workList.module.css'
 import work from '../data/data';
 
-export default function DevWork({ setPage }) {
+export default function DevWork({ setPage, setProject }) {
+    const changePage = (id) => {
+        setPage('devEx');
+        setProject(id);
+    };
+
 
     return (
         // <p>examples of my design work coming soon</p>
         <div className={styles.list}>
             {work.map(e =>
-                <div className={styles.container}>
+                <div className={styles.container} key={e.title}>
                     <h1 className={styles.projectTitle}>{e.title}</h1>
                     <figure className={styles.projectImage}>
                         <img src={e.image1} alt='screenshot of app' width='300' />
@@ -29,7 +34,7 @@ export default function DevWork({ setPage }) {
                                     <img className={styles.icon} src='/npm.svg' alt='npm' />
                                 </a>}
                         </div>
-                        <button onClick={() => setPage('GIM')}>MORE INFO
+                        <button onClick={() => changePage(e.id)}>MORE INFO
                         </button>
                     </div>
                 </div>)}
