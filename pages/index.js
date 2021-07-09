@@ -10,6 +10,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const [page, setPage] = useState('home');
+  const [project, setProject] = useState(null);
 
   return (
     <div className={styles.container}>
@@ -47,11 +48,11 @@ export default function Home() {
           </div>}
         {page === 'dev' &&
           <div className={styles.grid}>
-            <DevWork setPage={setPage} />
+            <DevWork setPage={setPage} setProject={setProject} />
           </div>}
-        {page === 'GIM' &&
+        {page === 'devEx' &&
           <div className={styles.grid}>
-            <GIM setPage={setPage} />
+            <GIM setPage={setPage} project={project} />
           </div>}
         {page === 'design' &&
           <p className={styles.grid}>examples of my design work coming soon
