@@ -1,24 +1,29 @@
-import styles from '../styles/workDetail.module.css'
+import styles from '../styles/workDetail.module.css';
+import work from '../data/data';
+import React from 'react';
 
-export default function GIM({ setPage }) {
+export default function GIM({ setPage, project }) {
+
+    let currentProj = work.find(e => e.id === project);
 
     return (
+        // <div>Hello</div>
         <div>
-            <h2 className={styles.title}>GIM LCC.</h2>
-            <p className={styles.tech}>React | Socket.io | Context Api | Node | Express</p>
+            <h2 className={styles.title}>{currentProj.title}</h2>
+            <p className={styles.tech}>{currentProj.tech}</p>
             <div className={styles.icons}>
-                <a href='https://github.com/GIM-LLC' target='_blank'>
-                    <img
-                        className={styles.icon}
-                        src='/git.svg'
-                        alt='github' />
-                </a>
-                <a href='https://www.escapegim.com/' target='_blank'>
-                    <img
-                        className={styles.icon}
-                        src='/site.svg'
-                        alt='live site' />
-                </a>
+                {currentProj.github &&
+                    <a href={currentProj.github} target='_blank'>
+                        <img className={styles.icon} src='/git.svg' alt='github' />
+                    </a>}
+                {currentProj.liveSite &&
+                    <a href={currentProj.liveSite} target='_blank'>
+                        <img className={styles.icon} src='/site.svg' alt='live site' />
+                    </a>}
+                {currentProj.npmLink &&
+                    <a href={currentProj.npmLink} target='_blank'>
+                        <img className={styles.icon} src='/npm.svg' alt='npm' />
+                    </a>}
             </div>
             <video
                 className={styles.demo}
@@ -26,19 +31,19 @@ export default function GIM({ setPage }) {
                 autoplay
                 muted
             >
-                <source src='/GIM.mp4' type="video/mp4" />
+                <source src={currentProj.video} type="video/mp4" />
             </video>
-            <p>LARGE BLURB 1 lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah</p>
+            <p>{currentProj.blurb1}</p>
             <div className={styles.detailImgContainer}>
-                <img src='/GIM.png' alt='screenshot 1 of app' />
-                <img src='/GIM2.png' alt='screenshot 2 of app' />
+                <img src={currentProj.image1} alt='screenshot 1 of app' />
+                <img src={currentProj.image2} alt='screenshot 2 of app' />
             </div>
-            <p>DETAIL BLURB 2 lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume</p>
+            <p>{currentProj.blurb2}</p>
             <div className={styles.detailImgContainer}>
-                <img src='/GIM3.png' alt='screenshot 3 of app' />
-                <img src='/GIM4.png' alt='screenshot 4 of app' />
+                <img src={currentProj.image3} alt='screenshot 3 of app' />
+                <img src={currentProj.image4} alt='screenshot 4 of app' />
             </div>
-            <p>DETAIL BLURB 3 lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume</p>
+            <p>{currentProj.blurb3}</p>
             <button className={styles.backBtn} onClick={() => setPage('dev')}>BACK TO DEV WORK</button>
         </div>
     )
