@@ -1,16 +1,13 @@
 import Head from 'next/head'
-import Header from '../components/Header'
 import Navigation from '../components/navigation'
 import Contact from '../components/Contact'
 import About from '../components/About'
-import DevWork from '../components/DevWork'
-import GIM from '../components/GIM'
+import Header from '../components/Header'
 import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const [page, setPage] = useState('home');
-  const [project, setProject] = useState(null);
 
   return (
     <div className={styles.container}>
@@ -47,13 +44,8 @@ export default function Home() {
             <About />
           </div>}
         {page === 'dev' &&
-          <div className={styles.grid}>
-            <DevWork setPage={setPage} setProject={setProject} />
-          </div>}
-        {page === 'devEx' &&
-          <div className={styles.grid}>
-            <GIM setPage={setPage} project={project} />
-          </div>}
+          <p className={styles.grid}>examples of my software engineering work coming soon
+          </p>}
         {page === 'design' &&
           <p className={styles.grid}>examples of my design work coming soon
           </p>}
