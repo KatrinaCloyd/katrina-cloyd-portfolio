@@ -65,7 +65,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>last update 6/2021</p>
+        <p>last update 7/2021</p>
       </footer>
     </div>
   )
