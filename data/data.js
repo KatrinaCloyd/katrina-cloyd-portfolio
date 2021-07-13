@@ -9,7 +9,7 @@ const work = [
         liveSite: 'https://www.escapegim.com/',
         npmLink: null,
         blurb1: 'Created by a remote team of five over an eight day sprint. Inspired by escape rooms and ghost stories, GIM (or the Ghost In the Machine) appears to be an innocuous corporate website, but as users explore they find clues about what is actually happening.Built using Socket.io, the initial idea was that the site would host multiple visitors at the same time, so that users could interact and work together to free the ghost before time ran out, and the ghost gets trapped forever. Users can chat with one another, see what other users are doing, and work together! The ghost can be freed on your own, but it is much more difficult.',
-        blurb2: 'Our first hurdle with this project was getting multiple cursors to render on the screen at once and update with each and every mouse move for all users. Once we got that functionality figured out over the socket connetions, all other interactions were fun to figure out!',
+        blurb2: 'Our first hurdle with this project was getting multiple cursors to render on the screen at once and update with each and every mouse move for all users. Once we got that functionality figured out over the socket connections, all other interactions were fun to figure out!',
         blurb3: 'This project was really an adventure in CSS animations. Images degrade over time, clues glow, sound effects and shake animations let you know you are making progress, elements flip, move, and dissapear. Explore for yourself to see if you can find all the surprises and free the ghost!',
         video: '/GIM.mp4',
         image1: '/GIM.png',
