@@ -50,7 +50,7 @@ export default function DevDetail() {
                     <p>{currentProj.blurb3}</p>
                     <button className={styles.backBtn} onClick={() => router.push('/DevWork')}>BACK TO DEV WORK</button>
                 </div>}
-            {!currentProj && <div> Sorry somthing went wrong, please navigate back to the DEV WORK page and try again.</div>}
+            {!currentProj && <div> Hmmm.... something went wrong. <br /> Please navigate back to the DEV WORK page and try again.</div>}
         </>
     )
 }
