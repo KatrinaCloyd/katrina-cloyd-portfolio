@@ -1,6 +1,6 @@
 const work = [
     {
-        id: 'devGIM',
+        id: 'GIM',
         title: 'GIM LCC.',
         oneLiner: 'GIM LLC is an escape room inspired website where players work together to find clues to free the ghost!',
         note: null,
@@ -18,7 +18,7 @@ const work = [
         image4: '/GIM4.png',
     },
     {
-        id: 'devPP',
+        id: 'PP',
         title: 'Pixel Pusher',
         oneLiner: 'Published NPM package to create unique art right in the terminal window! Users can also save, upload and view artwork in the gallery.',
         note: null,
@@ -36,7 +36,7 @@ const work = [
         image4: null,
     },
     {
-        id: 'devGG',
+        id: 'GG',
         title: 'GainfulGarden',
         oneLiner: 'Gardening site for users to search for new plants, and track their garden info. Live site under construction, as our source API was discontinued.',
         note: null,
@@ -54,7 +54,7 @@ const work = [
         image4: '/GG3.png',
     },
     {
-        id: 'devVM',
+        id: 'VM',
         title: 'Vampire Match',
         oneLiner: 'Memory card match game based on the movie and television series ',
         note: 'What We Do In The Shadows.',
