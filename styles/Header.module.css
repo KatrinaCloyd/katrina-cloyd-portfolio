@@ -6,10 +6,12 @@
     max-width: 80rem;
     align-content: flex-start;
     border-bottom: 9px double rgb(165, 30, 80);
+    align-items: flex-start;
 }
 
 .titleImg{
     max-width: 25rem;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {
