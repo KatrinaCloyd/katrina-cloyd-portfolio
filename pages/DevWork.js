@@ -3,7 +3,7 @@ import work from '../data/data'
 import { useRouter } from 'next/router'
 
 export default function DevWork() {
-    const router = useRouter();
+    const router = useRouter()
 
     return (
         <div className={styles.list}>
@@ -36,4 +36,4 @@ export default function DevWork() {
                 </div>)}
         </div>
     )
-};
+}
