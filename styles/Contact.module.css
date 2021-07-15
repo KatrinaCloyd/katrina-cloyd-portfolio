@@ -10,6 +10,11 @@
     border-bottom: 3px solid rgb(120, 125, 65);
 }
 
+.hoverNote{
+    margin-top: 0.8rem;
+    transition: 300ms ease-in-out;
+}
+
 @media (max-width: 600px) {
     .iconWrapper{
         text-align: center;

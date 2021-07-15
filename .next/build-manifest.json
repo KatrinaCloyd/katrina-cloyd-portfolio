@@ -19,10 +19,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/Contact.js"
     ],
-    "/DevDetail": [
+    "/DevWork": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/DevDetail.js"
+      "static/chunks/pages/DevWork.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
