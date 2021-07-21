@@ -1,11 +1,29 @@
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import styles from '../styles/workDetail.module.css'
 import work from '../data/data'
 
 export default function DevDetail() {
     const router = useRouter();
-    const project = router.query.id;
+    // const [show, setShow] = useState({
+    //     'github': '0',
+    //     'live': '0',
+    //     'npm': '0'
+    // })
 
+    // const fadeInNote = (icon) => {
+    //     setTimeout(() => {
+    //         setShow({ [icon]: '.8' })
+    //     }, 1000);
+    // }
+
+    // const fadeOutNote = (icon) => {
+    //     setTimeout(() => {
+    //         setShow({ [icon]: '0' })
+    //     }, 20);
+    // }
+
+    const project = router.query.id;
     let currentProj = work.find(e => e.id === project);
 
     return (
@@ -16,16 +34,37 @@ export default function DevDetail() {
                     <p className={styles.tech}>{currentProj.tech}</p>
                     <div className={styles.icons}>
                         {currentProj.github &&
-                            <a href={currentProj.github} target='_blank'>
+                            <a className={styles.tool}
+                                href={currentProj.github}
+                                target='_blank'
+                            // onMouseEnter={() => fadeInNote('github')}
+                            // onMouseLeave={() => fadeOutNote('github')}
+                            >
                                 <img className={styles.icon} src='/git.svg' alt='github' />
+                                {/* <span className={styles.tooltiptext} style={{ opacity: show.github || '0' }}
+                                    >GitHub</span> */}
                             </a>}
                         {currentProj.liveSite &&
-                            <a href={currentProj.liveSite} target='_blank'>
+                            <a className={styles.tool}
+                                href={currentProj.liveSite}
+                                target='_blank'
+                            // onMouseEnter={() => fadeInNote('live')}
+                            // onMouseLeave={() => fadeOutNote('live')}
+                            >
                                 <img className={styles.icon} src='/site.svg' alt='live site' />
+                                {/* <span className={styles.tooltiptext} style={{ opacity: show.live || '0' }}
+                                >live site</span> */}
                             </a>}
                         {currentProj.npmLink &&
-                            <a href={currentProj.npmLink} target='_blank'>
+                            <a className={styles.tool}
+                                href={currentProj.npmLink}
+                                target='_blank'
+                            // onMouseEnter={() => fadeInNote('npm')}
+                            // onMouseLeave={() => fadeOutNote('npm')}
+                            >
                                 <img className={styles.icon} src='/npm.svg' alt='npm' />
+                                {/* <span className={styles.tooltiptext} style={{ opacity: show.npm || '0' }}
+                                >npm page</span> */}
                             </a>}
                     </div>
                     {currentProj.video &&
