@@ -10,6 +10,18 @@
     border-bottom: 3px solid rgb(120, 125, 65);
 }
 
+.hoverNoteHide{
+    margin-top: 0.8rem;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.hoverNoteShow{
+    margin-top: 0.8rem;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
 @media (max-width: 600px) {
     .iconWrapper{
         text-align: center;
