@@ -15,7 +15,7 @@ export default function Home() {
         i’d love to hear what you think<br />
         or better: work with you</p>
       <p>thanks for visiting!</p>
-      <p>this is (obviously) still a work in progress...<br />
+      <p>this is still a work in progress...<br />
         thank you for your patience, and check back soon!
       </p>
     </article>

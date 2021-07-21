@@ -20,9 +20,6 @@ function MyApp({ Component, pageProps }) {
           </section>
           <Navigation />
         </main>
-        <footer className={styles.footer}>
-          <p>last update 7/2021</p>
-        </footer>
       </div>
     </>
   )
