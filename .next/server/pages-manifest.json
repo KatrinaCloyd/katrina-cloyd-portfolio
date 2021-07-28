@@ -2,9 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/DevDetail": "pages/DevDetail.js",
   "/DevWork": "pages/DevWork.js",
+  "/Contact": "pages/Contact.js",
   "/": "pages/index.js",
+  "/DesignWork": "pages/DesignWork.js",
   "/About": "pages/About.js",
-  "/Contact": "pages/Contact.js"
+  "/DevDetail": "pages/DevDetail.js"
 }

@@ -28,31 +28,6 @@
     transition: border 300ms ease-in-out;
 }
 
-.tool{
-    position: relative;
-}
-
-.tool .tooltiptext {
-    background-color: hotpink;
-    color: rgb(120, 125, 65);
-    text-align: center;
-    font-size: .8rem;
-    border-radius: 3px;
-    opacity: 0;
-    transition: opacity 0s linear 2s;
-    position: absolute;
-    bottom: 100%;
-    padding: 0 .5rem;
-    width: 120px;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px;
-  }
-  
-.tool:hover .tooltiptext {
-    opacity: .8;
-  }
-
 .icon:hover{
     border-bottom: 3px solid rgb(120, 125, 65);
 }
@@ -61,7 +36,7 @@
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 1rem;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .detailImgContainer img{
