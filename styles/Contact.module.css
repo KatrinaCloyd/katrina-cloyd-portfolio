@@ -23,11 +23,11 @@
 }
 
 @media (max-width: 600px) {
+
     .iconWrapper{
         text-align: center;
     }
     .icon {
         max-width: 2rem;
-        margin-right: 1rem;
     }
 }
