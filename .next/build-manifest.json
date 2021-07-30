@@ -29,11 +29,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/Contact.js"
     ],
-    "/DesignWork": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/DesignWork.js"
-    ],
     "/DevWork": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
