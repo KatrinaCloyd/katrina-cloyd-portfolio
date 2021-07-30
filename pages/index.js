@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+import styles from '../styles/Home.module.css'
+
+export default function Home() {
+
+  return (
+    <article className={styles.grid}>
+      <p>Hello! <br />
+        Welcome to my portfolio site.</p>
+      <p>I am a front end developer,<br />
+        designer,<br />
+        & artist.</p>
+      <p>Here you can find examples of my work with detailed information and links.</ p>
+      <p>Explore,<br />
+        make your self at home,<br />
+        I’d love to hear what you think,<br />
+        or better: work with you.</p>
+      <p>Thanks for visiting!</p>
+      <p>PS. <br />
+        This is still a work in progress...<br />
+        thank you for your patience, and check back soon!
+      </p>
+    </article>
+=======
 import Head from 'next/head'
 import Navigation from '../components/navigation'
 import Contact from '../components/Contact'
@@ -60,5 +84,6 @@ export default function Home() {
         <p>last update 6/2021</p>
       </footer>
     </div>
+>>>>>>> master
   )
 }
