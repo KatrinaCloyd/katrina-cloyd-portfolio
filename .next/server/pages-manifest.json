@@ -3,8 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/DevWork": "pages/DevWork.js",
-  "/Contact": "pages/Contact.js",
-  "/": "pages/index.js",
-  "/About": "pages/About.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+  "/DevDetail": "pages/DevDetail.js",
+  "/About": "pages/About.js"
 }
