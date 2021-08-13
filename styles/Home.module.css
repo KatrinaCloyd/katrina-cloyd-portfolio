@@ -7,11 +7,10 @@
   align-items: center;
 }
 
-.main {
+.page {
   padding: 1.5rem 5rem;
   flex:1; 
   display: flex;
-  flex-direction: row;
   width: 100%;
   max-width: 80rem;
 }
@@ -27,7 +26,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: rgb(181, 173, 165);
+  color: var(--ltgrey);
   font-size: .75rem;
 }
 
@@ -35,7 +34,7 @@
   .grid{
     width: 100%;
   }
-  .main {
+  .page {
     width: 100%;
     flex-direction: column-reverse;
     justify-content: flex-end;
