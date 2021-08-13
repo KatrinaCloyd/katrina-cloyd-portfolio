@@ -14,12 +14,12 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div className={styles.container}>
         <Header />
-        <main className={styles.main}>
-          <section className={styles.grid}>
+        <section className={styles.page}>
+          <main className={styles.grid}>
             <Component {...pageProps} />
-          </section>
+          </main>
           <Navigation />
-        </main>
+        </section>
       </div>
     </>
   )

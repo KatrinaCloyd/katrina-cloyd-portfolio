@@ -7,7 +7,7 @@
 }
 
 .icon:hover{
-    border-bottom: 3px solid rgb(120, 125, 65);
+    border-bottom: 3px solid var(--green);
 }
 
 .hoverNoteHide{
