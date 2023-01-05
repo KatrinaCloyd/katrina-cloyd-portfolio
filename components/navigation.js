@@ -1,24 +1,28 @@
-import Link from "next/link";
-import styles from "../styles/Nav.module.css";
+import styles from '../styles/Nav.module.css'
 
-export default function Navigation(home) {
+export default function Navigation({ page, setPage }) {
+
     return (
         <nav className={styles.navList}>
-            <Link href='/'>
-                <a className={home ? [styles.selected, styles.navItem].join(' ') : styles.navItem}>HOME</a>
-            </Link>
-            <Link href='/about'>
-                <a className={styles.navItem}>ABOUT</a>
-            </Link>
-            <Link href='/dev'>
-                <a className={styles.navItem}>DEV WORK</a>
-            </Link>
-            <Link href='/design'>
-                <a className={styles.navItem}>DESIGN WORK</a>
-            </Link>
-            <Link href='/contact'>
-                <a className={styles.navItem}>CONTACT</a>
-            </Link>
+            <a className={page === 'home' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
+                onClick={() => { setPage('home') }}>
+                HOME</a>
+            <a className={page === 'about' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
+                onClick={() => { setPage('about') }}>
+                ABOUT
+            </a>
+            <a className={page === 'dev' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
+                onClick={() => { setPage('dev') }}>
+                DEV WORK
+            </a>
+            <a className={page === 'design' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
+                onClick={() => { setPage('design') }}>
+                DESIGN WORK
+            </a>
+            <a className={page === 'contact' ? [styles.selected, styles.navItem].join(' ') : styles.navItem}
+                onClick={() => { setPage('contact') }}>
+                CONTACT
+            </a>
         </nav>
     )
 };
