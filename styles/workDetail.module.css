@@ -24,11 +24,11 @@
     margin: 0 .3rem;
     padding: .2rem;
     border-bottom: 3px solid white;
-    transition: border 300ms ease-in-out;
+    transition: border .2s ease-in-out;
 }
 
 .icon:hover{
-    border-bottom: 3px solid var(--green);
+    border-bottom: 3px solid var(--dkmaroon);
 }
 
 .detailImgContainer{

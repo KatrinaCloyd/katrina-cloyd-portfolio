@@ -14,16 +14,16 @@
     margin: 0 .2rem .8rem .2rem; 
     border-bottom: 3px solid white;
     cursor: pointer;
-    transition: color, border-bottom 300ms ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .navItem:hover{
-    color: var(--green);
+    color: var(--dkmaroon);
 }
 
 .selected{
     color: var(--maroon);
-    border-bottom: 3px solid var(--green);
+    border-bottom: 3px solid var(--dkmaroon);
 }
 
 @media (max-width: 600px) {

@@ -20,11 +20,11 @@
     font-family: var(--headerfont);
     font-size: 1.2rem;
     text-decoration: underline;
-    transition: color 300ms ease-in-out;
+    transition: color .2s ease-in-out;
 }
 
 .resume:hover{
-    color: var(--green);
+    color: var(--dkmaroon);
 }
 
 @media (max-width: 600px) {
