@@ -1,22 +1,6 @@
 import styles from '../styles/workDetail.module.css'
 
 export default function GIM({ setPage }) {
-    //make this into a component that takes in project object 
-    //KEYS:
-    // title
-    // oneLiner
-    // tech 
-    // github
-    // liveSite
-    // npmLink
-    // blurb1
-    // blurb2
-    // blurb3
-    // video
-    // image1
-    // image2
-    // image3
-    // image4
 
     return (
         <div>
