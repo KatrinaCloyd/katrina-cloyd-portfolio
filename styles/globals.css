@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -13,21 +13,21 @@ body {
   font-weight: 100;
   color: var(--grey);
 
-    /* COLORS */
-    --grey: rgb(140, 130, 122);
-    --ltgrey: rgb(181, 173, 165);
-    --maroon: rgb(165, 30, 80);
-    --btngrey: rgba(181, 173, 165, .3);
-    --green: rgb(120, 125, 65);
+  /* COLORS */
+  --grey: rgb(140, 130, 122);
+  --ltgrey: rgb(181, 173, 165);
+  --maroon: rgb(165, 30, 80);
+  --btngrey: rgba(181, 173, 165, 0.3);
+  --green: rgb(120, 125, 65);
 
-    /* FONTS */
-    --bodyfont: 'Montserrat', sans-serif;
-    --headerfont: 'Barlow Semi Condensed', sans-serif;
+  /* FONTS */
+  --bodyfont: "Montserrat", sans-serif;
+  --headerfont: "Barlow Semi Condensed", sans-serif;
 }
 
 @media (max-width: 600px) {
-  body{
-      font-size: .9rem;
+  body {
+    font-size: 0.9rem;
   }
 }
 
@@ -36,34 +36,47 @@ a {
   text-decoration: none;
 }
 
-p{
+p {
   margin-top: 0;
 }
 
-hr{
+hr {
   height: 2px;
   background-color: var(--grey);
   border: none;
 }
 
-button{
+button {
   font-family: var(--headerfont);
   color: var(--grey);
   background-color: white;
   border-radius: 3px;
   border: 2px solid var(--maroon);
   box-shadow: 3px 3px var(--ltgrey);
-  padding: .1rem 1.5rem;
+  padding: 0.1rem 1.5rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
 
-button:hover{
+button:hover {
   color: var(--maroon);
-  background-color:var(--btngrey);
-  box-shadow: 1px 1px var(--ltgrey);;
+  background-color: var(--btngrey);
+  box-shadow: 1px 1px var(--ltgrey);
 }
 
-p:first-child{
+p:first-child {
   text-align: left;
+}
+
+section {
+  position: relative;
+}
+
+.hidden {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
 }
