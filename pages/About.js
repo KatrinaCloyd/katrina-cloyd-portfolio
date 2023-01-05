@@ -13,18 +13,18 @@ export default function About() {
         <p>
           In college, for a short while, I thought I would be an artist, but I
           went back to the art teacher plan. After college, with my Ohio
-          teaching license in hand, I thought I would never be an art teacher…
+          teaching license in hand, I thought I would never become an art teacher…
         </p>
         <p>
           Then I became an Oregonian. I began painting, baking, jewelry making,
           street fair vending, gardening, freelancing, and pretty much trying it
-          all. I needed a creative outlet and an array of avenues led me to
+          all. I needed a creative outlet and a combination avenues led me to
           design.
         </p>
         <p>
           So I became a Graphic Designer. Years of that corporate life taught me
           so much but I still wanted more. I wanted a challenge, more variance
-          in the day to day... <br />I wanted to know how to build my own site!
+          in the day to day... <br />And I wanted to know how to build my own site!
         </p>
         <p>
           So I became a Software Engineer.
@@ -39,10 +39,10 @@ export default function About() {
           make awesome family themed halloween costumes, and try as often as
           possible to explore what the world has to offer.
         </p>
-        {/* <p>Maybe someday I will still become a poet.</p> */}
+        <p>Maybe someday I will still become a poet.</p>
         <hr></hr>
         <a
-          href="/KatrinaCloyd2021.pdf"
+          href="/KatrinaCloyd2022.pdf"
           className={styles.resume}
           target="_blank"
         >
@@ -52,16 +52,20 @@ export default function About() {
         <br />
         <p>
           Languages: <br />
-          JavaScript | HTML5 | CSS3{" "}
+          JavaScript | Typescript | HTML5
         </p>
         <p>
-          Libraries/Frameworks:
+          Styling: <br />
+          CSS3 | SASS | Styled Components | Material UI | Theme UI
+        </p>
+        <p>
+          Libraries & Frameworks:
           <br />
-          React | Next.js | Node.js | Socket.io | Express | Rest APIs{" "}
+          React | Next.js | GraphQL | Node.js | Socket.io | Express | Rest APIs
         </p>
         <p>
-          Databases: <br />
-          SQL | PostgreSQL
+          Headless CMS & Databases: <br />
+          Contentful | Strapi | MySQL | SQL | PostgreSQL
         </p>
         <p>
           Testing Suites: <br />
@@ -69,9 +73,12 @@ export default function About() {
         </p>
         <p>
           Tools: <br />
-          GitHub | VScode | Miro | Slack | Smartsheet | Trello <br />{" "}
-          Illustrator | InDesign | Photoshop
-        </p>{" "}
+          Git | GitHub | Bitbucket | Jira | VScode | Miro | Slack | Smartsheet | Trello | Illustrator | InDesign | Photoshop
+        </p>
+        <p>
+          Currently learning: <br />
+          Vue | Nuxt
+        </p>
       </article>
     </section>
   );

@@ -4,17 +4,17 @@ const work = [
     category: "dev",
     title: "Schema Partners",
     oneLiner:
-      "Primary marketing site for new M&A Consultant and Certified Valuation Analyst ",
+      " Schema Partners is a primary marketing site for a local M&A Consultant and Certified Valuation Analyst ",
     note: "Edward Roney.",
     tech: "JavaScript | React | Next | HTML | CSS",
     github: "https://github.com/KatrinaCloyd/schemapartners",
     liveSite: "https://www.schemapartners.com/",
     npmLink: null,
     blurb1:
-      "This is a new contact and informational site for a local Portland Consultant and Valuation Analyst. This was an individual project built for the client from logo design, UI/UX design, through to the live active site.",
+      "This is a new contact and informational site for a local Portland Consultant and Valuation Analyst. This was a freelance project built for the client from initial logo design, through UI/UX design, and to this live site. Created with clarity, simplicity, and design in mind, the site carries these things responsively through all screen sizes.",
     blurb2: null,
     blurb3:
-      "To read more about the design process or to see the evolution of the Schema Partners logo, see my design work page.",
+      "To read more about the design process or to see the evolution of the Schema Partners logo, see my design work page. (coming soon...)",
     video: "/SP.mp4",
     image1: "/SP.png",
     image2: null,

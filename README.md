@@ -1,12 +1,10 @@
 ## Portfolio Site for Katrina Cloyd 
 
-Frontend software engineer with fullstack experience, who also loves design and to make simple beautiful things. 
+Frontend software engineer with fullstack experience, who also loves design and to make things look good. 
 
-Including my portfolio... I promise... just not yet. <br><br>
+Please feel free to explore the rest of my GitHub to see other projects, experiments, and client sites. 
 
-In the mean time, please feel free to explore the rest of my GitHub, you are clearly already here. 
+View my professional experience on [LinkedIn](https://www.linkedin.com/in/katrinacloyd/). 
 
-Or you can see my professional experience on [LinkedIn](https://www.linkedin.com/in/katrinacloyd/). 
-
-This is my first project using [Next.js](https://nextjs.org/). <br>
+This was my first project using [Next.js](https://nextjs.org/) and it is ever evolving. <br>
 Bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
