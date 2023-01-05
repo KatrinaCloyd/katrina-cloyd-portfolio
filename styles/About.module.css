@@ -16,16 +16,6 @@
     padding-left: 1rem;
 }
 
-@media (max-width: 600px) {
-    .about{
-        flex-direction: column;
-    }
-    .headshot {
-      max-width: 70%;
-      align-self: center;
-    }
-  }
-
 .resume{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2rem;
@@ -35,3 +25,13 @@
 .resume:hover{
     color: rgb(120, 125, 65);
 }
+
+@media (max-width: 600px) {
+    .about{
+        flex-direction: column;
+    }
+    .headshot {
+      max-width: 70%;
+      align-self: center;
+    }
+  }
