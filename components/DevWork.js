@@ -1,140 +1,38 @@
 import styles from '../styles/workList.module.css'
+import work from '../data/data';
 
 export default function DevWork({ setPage }) {
 
     return (
         // <p>examples of my design work coming soon</p>
         <div className={styles.list}>
-            <div className={styles.container}>
-                <h1 className={styles.projectTitle}>GIM LLC.</h1>
-                <figure className={styles.projectImage}>
-                    <img src='/GIM.png' alt='screenshot of GIM homepage' width='300' />
-                </figure >
-                <div className={styles.projectInfo}>
-                    <p>GIM LLC is an escape room inspired website where players work together to find clues to free the ghost!</p>
-                    <p>React | Socket.io<br />Context Api | Node | Express</p>
-                    <div className={styles.icons}>
-                        <a href='https://github.com/GIM-LLC' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/git.svg'
-                                alt='github' />
-                        </a>
-                        <a href='https://www.escapegim.com/' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/npm.svg'
-                                alt='npm' />
-                        </a>
+            {work.map(e =>
+                <div className={styles.container}>
+                    <h1 className={styles.projectTitle}>{e.title}</h1>
+                    <figure className={styles.projectImage}>
+                        <img src={e.image1} alt='screenshot of app' width='300' />
+                    </figure >
+                    <div className={styles.projectInfo}>
+                        <p>{e.oneLiner}<em>{e.note}</em></p>
+                        <p>{e.tech}</p>
+                        <div className={styles.icons}>
+                            {e.github &&
+                                <a href={e.github} target='_blank'>
+                                    <img className={styles.icon} src='/git.svg' alt='github' />
+                                </a>}
+                            {e.liveSite &&
+                                <a href={e.liveSite} target='_blank'>
+                                    <img className={styles.icon} src='/site.svg' alt='live site' />
+                                </a>}
+                            {e.npmLink &&
+                                <a href={e.npmLink} target='_blank'>
+                                    <img className={styles.icon} src='/npm.svg' alt='npm' />
+                                </a>}
+                        </div>
+                        <button onClick={() => setPage('GIM')}>MORE INFO
+                        </button>
                     </div>
-                    <button onClick={() => setPage('GIM')}>MORE INFO
-                    </button>
-                </div>
-            </div>
-            <div className={styles.container}>
-                <h1 className={styles.projectTitle}>GIM LLC. 2 </h1>
-                <figure className={styles.projectImage}>
-                    <img src='/GIM.png' alt='screenshot of GIM homepage' width='300' />
-                </figure >
-                <div className={styles.projectInfo}>
-                    <p>GIM LLC is an escape room inspired website where players work together to find clues to free the ghost!</p>
-                    <p>React | Socket.io<br />Context Api | Node | Express</p>
-                    <div className={styles.icons}>
-                        <a href='https://github.com/GIM-LLC' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/git.svg'
-                                alt='github' />
-                        </a>
-                        <a href='https://www.escapegim.com/' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/site.svg'
-                                alt='live site' />
-                        </a>
-                    </div>
-                    <button onClick={() => setPage('GIM')}>MORE INFO
-                    </button>
-                </div>
-            </div>
-            <div className={styles.container}>
-                <h1 className={styles.projectTitle}>GIM LLC. 3 </h1>
-                <figure className={styles.projectImage}>
-                    <img src='/GIM.png' alt='screenshot of GIM homepage' width='300' />
-                </figure >
-                <div className={styles.projectInfo}>
-                    <p>GIM LLC is an escape room inspired website where players work together to find clues to free the ghost!</p>
-                    <p>React | Socket.io<br />Context Api | Node | Express</p>
-                    <div className={styles.icons}>
-                        <a href='https://github.com/GIM-LLC' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/git.svg'
-                                alt='github' />
-                        </a>
-                        <a href='https://www.escapegim.com/' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/site.svg'
-                                alt='live site' />
-                        </a>
-                    </div>
-                    <button onClick={() => setPage('GIM')}>MORE INFO
-                    </button>
-                </div>
-            </div>
-            <div className={styles.container}>
-                <h1 className={styles.projectTitle}>GIM LLC. 4 </h1>
-                <figure className={styles.projectImage}>
-                    <img src='/GIM.png' alt='screenshot of GIM homepage' width='300' />
-                </figure >
-                <div className={styles.projectInfo}>
-                    <p>GIM LLC is an escape room inspired website where players work together to find clues to free the ghost!</p>
-                    <p>React | Socket.io<br />Context Api | Node | Express</p>
-                    <div className={styles.icons}>
-                        <a href='https://github.com/GIM-LLC' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/git.svg'
-                                alt='github' />
-                        </a>
-                        <a href='https://www.escapegim.com/' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/site.svg'
-                                alt='live site' />
-                        </a>
-                    </div>
-                    <button onClick={() => setPage('GIM')}>MORE INFO
-                    </button>
-                </div>
-            </div>
-            <div className={styles.container}>
-                <h1 className={styles.projectTitle}>GIM LLC. 5 </h1>
-                <figure className={styles.projectImage}>
-                    <img src='/GIM.png' alt='screenshot of GIM homepage' width='300' />
-                </figure >
-                <div className={styles.projectInfo}>
-                    <p>GIM LLC is an escape room inspired website where players work together to find clues to free the ghost!</p>
-                    <p>React | Socket.io<br />Context Api | Node | Express</p>
-                    <div className={styles.icons}>
-                        <a href='https://github.com/GIM-LLC' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/git.svg'
-                                alt='github' />
-                        </a>
-                        <a href='https://www.escapegim.com/' target='_blank'>
-                            <img
-                                className={styles.icon}
-                                src='/site.svg'
-                                alt='live site' />
-                        </a>
-                    </div>
-                    <button onClick={() => setPage('GIM')}>MORE INFO
-                    </button>
-                </div>
-            </div>
+                </div>)}
         </div>
     )
 };
