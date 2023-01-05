@@ -50,8 +50,14 @@
     box-shadow: 2px 2px 2px rgb(181, 173, 165);
 }
 
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .icon{
-    max-width: 2rem;
+    height: 2.5rem;
     margin: 0 .3rem;
     padding: .2rem;
     border-bottom: 3px solid white;
@@ -60,6 +66,17 @@
 
 .icon:hover{
     border-bottom: 3px solid rgb(120, 125, 65);
+}
+
+@media (max-width: 650px) {
+    .projectImage img{
+        width: 95%;
+    }
+    .container{
+        max-width: 20rem;
+        width: 90%;
+        height: min-content;
+    }
 }
 
 @media (max-width: 600px) {
@@ -73,13 +90,20 @@
     .list{
         justify-content: center;
     }
+    .projectImage img{
+        width: 95%;
+    }
     .container{
         max-width: 20rem;
         width: 80%;
         height: min-content;
         font-size: .8rem;
     }
-    .projectImage img{
-        width: 95%;
+}
+
+@media (max-width: 365px) {
+    .projectInfo{
+        padding: .5rem;
+        overflow: scroll;
     }
 }

@@ -51,7 +51,7 @@ export default function Home() {
           </div>}
         {page === 'GIM' &&
           <div className={styles.grid}>
-            <GIM />
+            <GIM setPage={setPage} />
           </div>}
         {page === 'design' &&
           <p className={styles.grid}>examples of my design work coming soon
