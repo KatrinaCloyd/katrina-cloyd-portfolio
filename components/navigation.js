@@ -1,37 +1,24 @@
-import Link from 'next/link'
-import { useRouter } from "next/router"
-import styles from '../styles/Nav.module.css'
+import Link from "next/link";
+import styles from "../styles/Nav.module.css";
 
 export default function Navigation() {
-    const router = useRouter();
-
-    return (
-        <nav className={styles.navList}>
-            <Link href='/'>
-                <div className={router.asPath === '/' ? [styles.selected, styles.navItem].join(' ') : styles.navItem} >
-                    HOME
-                </div>
-            </Link>
-            <Link href='/About'>
-                <div className={router.asPath === '/About' ? [styles.selected, styles.navItem].join(' ') : styles.navItem} >
-                    ABOUT
-                </div>
-            </Link>
-            <Link href='/DevWork'>
-                <div className={router.asPath === '/DevWork' ? [styles.selected, styles.navItem].join(' ') : styles.navItem} >
-                    DEV WORK
-                </div>
-            </Link>
-            <Link href='/DesignWork'>
-                <div className={router.asPath === '/DesignWork' ? [styles.selected, styles.navItem].join(' ') : styles.navItem} >
-                    DESIGN WORK
-                </div>
-            </Link>
-            <Link href='/Contact'>
-                <div className={router.asPath === '/Contact' ? [styles.selected, styles.navItem].join(' ') : styles.navItem} >
-                    CONTACT
-                </div>
-            </Link>
-        </nav>
-    )
-};
+  return (
+    <nav className={styles.navList}>
+      <Link href="/">
+        <a className={styles.navItem}>HOME</a>
+      </Link>
+      <Link href="/about">
+        <a className={styles.navItem}>ABOUT</a>
+      </Link>
+      <Link href="/dev">
+        <a className={styles.navItem}>DEV WORK</a>
+      </Link>
+      <Link href="/design">
+        <a className={styles.navItem}>DESIGN WORK</a>
+      </Link>
+      <Link href="/contact">
+        <a className={styles.navItem}>CONTACT</a>
+      </Link>
+    </nav>
+  );
+}
