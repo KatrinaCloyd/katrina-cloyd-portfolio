@@ -13,9 +13,9 @@ const work = [
         blurb3: 'big blurb #3 final text block - reflection, sucesses, closing. lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume',
         video: '/GIM.mp4',
         image1: '/GIM.png',
-        image2: '/GIM1.png',
-        image3: '/GIM2.png',
-        image4: '/GIM3.png',
+        image2: '/GIM2.png',
+        image3: '/GIM3.png',
+        image4: '/GIM4.png',
     },
     {
         id: 'devPP',
@@ -66,10 +66,10 @@ const work = [
         blurb2: 'big blurb #2 comes after first two images, give fun detail about a challenge, an accomplishment, the backend. lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume',
         blurb3: 'big blurb #3 final text block - reflection, sucesses, closing. lorem ipsum placeholder text for description from resume same stuff  different place description description blah blah blah lorem ipsum placeholder text for description from resume',
         video: '/GIM.mp4',
-        image1: '/GIM.png',
-        image2: '/GIM.png',
-        image3: '/GIM.png',
-        image4: '/GIM.png',
+        image1: '/Vamp1.png',
+        image2: '/Vamp2.png',
+        image3: '/Vamp3.png',
+        image4: '/Vamp4.png',
     },
 ];
 

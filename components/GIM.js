@@ -25,14 +25,15 @@ export default function GIM({ setPage, project }) {
                         <img className={styles.icon} src='/npm.svg' alt='npm' />
                     </a>}
             </div>
-            <video
-                className={styles.demo}
-                controls
-                autoplay
-                muted
-            >
-                <source src={currentProj.video} type="video/mp4" />
-            </video>
+            {currentProj.video &&
+                <video
+                    className={styles.demo}
+                    controls
+                    autoplay
+                    muted
+                >
+                    <source src={currentProj.video} type="video/mp4" />
+                </video>}
             <p>{currentProj.blurb1}</p>
             <div className={styles.detailImgContainer}>
                 <img src={currentProj.image1} alt='screenshot 1 of app' />
