@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navigation from '../components/navigation'
+import Contact from '../components/Contact'
 import Header from '../components/Header'
 import { useState } from 'react'
 import styles from '../styles/Home.module.css'
@@ -31,7 +32,7 @@ export default function Home() {
             <br />
             thanks for visiting!<br />
             <br />
-            this is (obviously) still a work in progress... slow pregress if I am being honest, becasue I am usting this as my first next.js project<br />
+            this is (obviously) still a work in progress... slow pregress if I am being honest, becasue I am using this as my first next.js project<br />
             <br />
             which is very exciting and fun, but also considerably slower, so thank you for your patience, and check back soon! <br />
             <br />
@@ -47,8 +48,9 @@ export default function Home() {
           <p className={styles.grid}>examples of my design work coming soon
           </p>}
         {page === 'contact' &&
-          <p className={styles.grid}>list of conatct icons
-          </p>}
+          <div className={styles.grid}>
+            <Contact />
+          </div>}
         <Navigation page={page} setPage={setPage} />
       </main>
 
