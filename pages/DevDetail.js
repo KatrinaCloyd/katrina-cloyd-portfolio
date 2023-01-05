@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
-import styles from '../styles/workDetail.module.css';
-import work from '../data/data';
+import styles from '../styles/workDetail.module.css'
+import work from '../data/data'
 
 export default function DevDetail() {
     const router = useRouter();
