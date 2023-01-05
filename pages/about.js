@@ -24,7 +24,3 @@ export default function About() {
         </div>
     )
 }
-
-{/* <p>Full stack software engineer with a soft spot for the front end. I love problem-solving and collaborating to find unique solutions from fresh perspectives.</p>
-<p>With seven years of experience as a graphic designer, I have a passion to make things look great and work well.</p>
-<p>When time allows, I also paint, hike, garden, make jewelry, and love to bake.</p> */}
