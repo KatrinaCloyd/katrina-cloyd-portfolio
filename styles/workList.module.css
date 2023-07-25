@@ -7,7 +7,7 @@
 .container{
     width: 20rem;
     position: relative;
-    border: 2px solid rgb(140, 130, 122);
+    border: 2px solid var(--grey);
     transition: transform .25s ease;
     font-size: .9rem;
     transition: box-shadow 0.5s ease;
@@ -23,7 +23,7 @@
 }
 
 .projectTitle{
-    background-color: rgb(140, 130, 122);
+    background-color: var(--grey);
     color: white;
     padding: .1rem .5rem;
     margin: 0;
@@ -48,12 +48,10 @@
 }
 
 .container:hover{
-    box-shadow: 2px 2px 2px rgb(181, 173, 165);
+    box-shadow: 2px 2px 2px var(--ltgrey);
 }
 
 .icons{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -62,16 +60,19 @@
     margin: 0 .3rem;
     padding: .2rem;
     border-bottom: 3px solid white;
-    transition: border 300ms ease-in-out;
+    transition: border .2s ease-in-out;
 }
 
 .icon:hover{
-    border-bottom: 3px solid rgb(120, 125, 65);
+    border-bottom: 3px solid var(--dkmaroon);
 }
 
 @media (max-width: 650px) {
     .projectImage img{
         width: 95%;
+    }
+    .projectInfo{
+        overflow: scroll;
     }
     .container{
         max-width: 20rem;
@@ -81,23 +82,14 @@
 }
 
 @media (max-width: 600px) {
-    .iconWrapper{
-        text-align: center;
-    }
-    .icon {
-        max-width: 2rem;
-        margin-right: .5rem;
-    }
     .list{
         justify-content: center;
     }
-    .projectImage img{
-        width: 95%;
+    .icon {
+        max-width: 2rem;
     }
     .container{
-        max-width: 20rem;
         width: 80%;
-        height: min-content;
         font-size: .8rem;
     }
 }
@@ -105,6 +97,5 @@
 @media (max-width: 365px) {
     .projectInfo{
         padding: .5rem;
-        overflow: scroll;
     }
 }

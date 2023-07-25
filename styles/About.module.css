@@ -1,6 +1,5 @@
 .about{
     display: flex;
-    flex-direction: row;
     align-content: flex-start;
 }
 
@@ -18,14 +17,14 @@
 }
 
 .resume{
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: var(--headerfont);
     font-size: 1.2rem;
     text-decoration: underline;
-    transition: color 300ms ease-in-out;
+    transition: color .2s ease-in-out;
 }
 
 .resume:hover{
-    color: rgb(120, 125, 65);
+    color: var(--dkmaroon);
 }
 
 @media (max-width: 600px) {

@@ -1,5 +1,5 @@
 .title{
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: var(--headerfont);
     font-size: 1.5rem;
     margin: 0;
 }
@@ -14,9 +14,8 @@
     max-width: 30rem;
     margin: 1rem auto;
 }
+
 .icons{
-    display: flex;
-    flex-direction: row;
     margin-bottom: 1.5rem;
 }
 
@@ -25,11 +24,11 @@
     margin: 0 .3rem;
     padding: .2rem;
     border-bottom: 3px solid white;
-    transition: border 300ms ease-in-out;
+    transition: border .2s ease-in-out;
 }
 
 .icon:hover{
-    border-bottom: 3px solid rgb(120, 125, 65);
+    border-bottom: 3px solid var(--dkmaroon);
 }
 
 .detailImgContainer{
@@ -50,7 +49,6 @@
 
 @media (max-width: 800px) {
     .detailImgContainer{
-        display: flex;
         flex-direction: column;
         padding-bottom: 1rem;
     }

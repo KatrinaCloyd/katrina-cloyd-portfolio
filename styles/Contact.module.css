@@ -3,26 +3,27 @@
     margin-right: 1.5rem;
     padding: .2rem;
     border-bottom: 3px solid white;
-    transition: border 300ms ease-in-out;
+    transition: border .2s ease-in-out;
 }
 
 .icon:hover{
-    border-bottom: 3px solid rgb(120, 125, 65);
+    border-bottom: 3px solid var(--dkmaroon);
 }
 
 .hoverNoteHide{
     margin-top: 0.8rem;
     opacity: 0;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity .2s ease-in-out;
 }
 
 .hoverNoteShow{
     margin-top: 0.8rem;
     opacity: 1;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity .2s ease-in-out;
 }
 
 @media (max-width: 600px) {
+
     .iconWrapper{
         text-align: center;
     }
