@@ -13,6 +13,9 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="software engineer && graphic design portfolio"
         />
+        <meta property="og:image" content="/socialshare.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <div className={styles.container}>
         <Header />
